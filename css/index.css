@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+#navbar {
+    background-color: rgb(46, 53, 41);
+    margin-bottom: 0;
+}
+
+
+#logo {
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
+#buscador {
+    margin-left: 400px;
+    display: flex;
+}
+
+#placeholder {
+    margin-right: 5px;
+}
+
+@media (max-width: 969px) {
+    #buscador {
+        margin-left: 0px;
+    }
+
+
+
+    #lista {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+
+
+}
+
+@media (min-width: 965px) {
+
+
+    #buscador {
+        display: inline-block;
+        width: auto;
+        margin: 7px 20px 0 20px;
+        text-align: justify;
+    }
+
+}
+
+#contenedor img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+#descripcion {
+    text-align: left
+}
+
+
+
+.contenedor__columna,
+img {
+    text-align: center;
+
+}
+
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+.contenedor__columna {
+    margin: 5px;
+
+}
+
+.carreras .contenedor {
+    display: grid;
+}
+
+#nombre {
+    text-align: center;
+    font-size: 2.7vh;
+}
+
+
+@media(min-width:520px) {
+    .carreras .contenedor {
+        grid-template-columns: repeat(2, 50%);
+
+    }
+}
+
+@media(min-width:728px) {
+    .carreras .contenedor {
+        grid-template-columns: repeat(3, 33.3%);
+    }
+
+
+}
+
+@media(min-width:1024px) {
+    .carreras .contenedor {
+
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .contenedor {
+        width: 1024px;
+    }
+}
+
+@media(min-width:1200px) {
+    .contenedor {
+        width: 1200px;
+    }
+}
+
+
+
+
+button:hover {
+    background: rgb(110, 100, 100);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: translateY(10px);
+
+}
+
+#centro {
+    margin-left: 50px;
+}
+
+
+#educacion {
+    margin-top: 50px;
+}
+
+
+#depTecnologia {
+    width: 128px;
+    height: 128px;
+    margin: auto 55px;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+
+#historia {
+    margin: auto 35px;
+    text-align: justify;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+#historia {
+    background-color: gray;
+    color: white;
+    padding: 10px 0;
+}
+
+form {
+    margin-left: 3em;
+    margin-top: 3rem;
+}
+
+#iconos {
+    margin-left: 25rem;
+}
+
+#contenedorIcono {
+    margin-right: 20em;
+}
+
+#colectivos {
+    margin-left: 3em;
+}
+
+#colectivos p {
+    text-decoration: underline;
+    margin-top: 2em;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: burlywood;
+    align-self: flex-end;
+    width: 100%;
+    padding-left: 2vh;
+    text-align: center;
+}
+
+#tp {
+    margin-bottom: 0;
+}

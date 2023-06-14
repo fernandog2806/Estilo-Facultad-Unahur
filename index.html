@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js"></script>
+    <title>2° PARCIAL
+        Taller de lenguajes de marcado y tecnologías web</title>
+</head>
+
+<body>
+    <header>
+
+        <!--Navbar-->
+
+        <nav class="navbar navbar-inverse" role="navigation" id="navbar">
+
+
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" src="https://unahur.edu.ar/wp-content/uploads/2021/03/UNAHUR-1.png" title="UNAHUR"
+                    height="45" width="28" />
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse" id="lista">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Institucional <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://unahur.edu.ar/institucional/" target="_blank">Institucional</a></li>
+                            <li><a href="#historia" target="_blank">Historia</a>
+                            </li>
+                            <li><a href="https://unahur.edu.ar/institucional/#autoridades/"
+                                    target="_blank">Autoridades</a></li>
+                            <li><a href="https://unahur.edu.ar/convenios/" target="_blank">Convenios</a></li>
+                            <li><a href="https://unahur.edu.ar/consejo-superior/" target="_blank">Consejo Superior</a>
+                            </li>
+                            <li><a href="https://unahur.edu.ar/planeamiento-evaluacion/" target="_blank">Planeamiento y
+                                    Evaluación</a></li>
+                            <li><a href="https://boletinoficial.unahur.edu.ar/" target="_blank">Boletín Oficial</a></li>
+                            <li><a href="https://unahur.edu.ar/institucional/#compras" target="_blank">Compras</a></li>
+                            <li><a href="#colectivos" target="_blank">¿Cómo llegar?</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Oferta Académica<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#carreras" target="_blank">Oferta Académica</a>
+                            </li>
+                            <li><a href="#biotecnologia">Instituto de
+                                    Biotecnología</a></li>
+                            <li><a href="#educacion">Instituto de
+                                    Educación</a></li>
+                            <li><a href="#comunitaria">Instituto de Salud Comunitaria</a></li>
+                            <li><a href="#ingenieriaYTecnologia" target="_blank">Instituto de Ingeniería y
+                                    Tecnología</a></li>
+                            <li><a href="https://unahur.edu.ar/posgrados/" target="_blank">Postgrados</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Más Info <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://unahur.edu.ar/ciencia-y-tecnologia/" target="_blank">Ciencia y
+                                    Tecnología</a></li>
+                            <li><a href="https://unahur.edu.ar/extension-universitaria/" target="_blank">Extensión
+                                    Universitaria</a></li>
+                            <li><a href="https://unahur.edu.ar/becas-y-beneficios/" target="_blank">Becas y
+                                    Beneficios</a></li>
+                            <li><a href="https://unahur.edu.ar/relaciones-internacionales/" target="_blank">Relaciones
+                                    Internacionales</a></li>
+                            <li><a href="https://unahur.edu.ar/igualdad-genero/" target="_blank">Igualdad de Género</a>
+                            </li>
+                            <li><a href="https://unahur.edu.ar/libros-de-unahur/" target="_blank">Editorial</a></li>
+                            <li><a href="https://unahur.edu.ar/la-perla-del-oeste/" target="_blank">La Perla del
+                                    Oeste</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Nuestra Institución <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#inscripcion" target="_blank">Ingresantes</a></li>
+                            <li><a href="https://docentes.unahur.edu.ar/" target="_blank">Docentes</a></li>
+                            <li><a href="https://campus.unahur.edu.ar/" target="_blank">Campus Virtual</a></li>
+                            <li><a href="https://servicios.unahur.edu.ar/unahur3w/" target="_blank">SIU - Guaraní</a>
+                            </li>
+                            <li><a href="https://unahur.edu.ar/calendario-academico/" target="_blank">Calendario
+                                    Académico</a></li>
+                            <li><a href="https://unahur.edu.ar/biblioteca/" target="_blank">Biblioteca</a></li>
+
+
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <li class="dropdown">
+                    <form class="navbar-form navbar-right" action="/action_page.php" id="buscador">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Buscar" id="placeholder">
+                        </div>
+                        <button type="submit" class="btn btn-default">Buscar</button>
+                    </form>
+                </li>
+
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!--Carousel-->
+
+    <div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" id="contenedor">
+                    <img src="img/carrusel/biotecnologia.jpg" alt="Imagen de Biotecnología">
+
+                </div>
+
+                <div class="item" id="contenedor">
+                    <img src="img/carrusel/educacion.jpg" alt="Imagen de Educación">
+                </div>
+
+                <div class="item" id="contenedor">
+                    <img src="img/carrusel/salud-comunitaria.jpg" alt="Imagen de Salud Comunitaria">
+                </div>
+
+                <div class="item" id="contenedor">
+                    <img src="img/carrusel/ingenieria y tecnologia.jpg" alt="Imagen de Ingeniería y Tecnología">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!--Historia-->
+
+    <section id="historia">
+        <h1>Nuestra Historia</h1>
+        <p id="historia">La <strong>Universidad Nacional de Hurlingham (UNaHur)</strong> es una universidad nacional
+            pública argentina ubicada en la localidad de Hurlingham, en la provincia de Buenos Aires, Argentina. Se
+            trata de una institución pública y gratuita. Con un fuerte compromiso social la universidad viene a
+            resolver una demanda regional, aportando innovación y desarrollo tecnológico a la enseñanza argentina
+        </p>
+        <p id="historia">La <strong>UNAHUR</strong> fue creada mediante la Ley N° 27.016 sancionada en noviembre de
+            2014 y promulgada en diciembre del mismo año. En noviembre de 2015 la Comisión Nacional de Evaluación y
+            Acreditación Universitaria emitió el dictamen favorable para el inicio de actividades de la universidad,
+            en el mismo año asume como rector organizador el Lic. Jaime Perczyk, quien previamente había ocupado el
+            cargo de secretario del Ministerio de Educación y Deportes de la Nación. En 2016 comienza con el
+            objetivo de contribuir al desarrollo local y nacional a través de la producción y distribución
+            equitativa de conocimientos e innovaciones científico-tecnológicas.</p>
+        <p id="historia">
+            La universidad ofrece diversas ofertas académicas en las áreas de educación, tecnología e ingeniería,
+            salud y biotecnología. Las carreras cuentan con planes de estudio modulares y titulación intermedia,
+            facilitando una temprana inserción laboral.
+        </p>
+        <p id="historia">
+            Además,cuenta con un establecimiento abierto a la comunidad orientado al fomento de la investigación
+            científica y tecnológica. Al mismo tiempo, la Universidad impulsa actividades de extensión (talleres
+            culturales, deportivos, cursos y voluntariados) para la comunidad.</p>
+    </section>
+
+
+
+
+
+    <!--Oferta Académica-->
+
+    <section class="carreras" id="carreras">
+        <h1>Oferta Académica</h1>
+
+
+        <!-- Biotecnologia -->
+
+        <h2 id="biotecnologia"> <a href="https://unahur.edu.ar/instituto-de-biotecnologia/" target="_blank">Instituto de
+                Biotecnologia</a></h2>
+        <div class="contenedor">
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Laboratorio-TEC.png" alt="">
+                <h5 id="nombre">Tecnicatura en Laboratorio</h5>
+                <p id="descripcion">TÍTULO: Técnico/a en Laboratorio
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="https://unahur.edu.ar/tecnicatura-en-laboratorio/" target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Biotecnologia-LIC.png">
+                <h5 id="nombre">Licenciatura en Biotecnología</h5>
+                <p id="descripcion"> TÍTULO: Licenciado/a en Biotecnología
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                    <a href="https://unahur.edu.ar/licenciatura-en-biotecnologia/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Ambental-TEC.png" alt="">
+
+                <h5 id="nombre">Tecnicatura Universitaria en Gestión Ambiental</h5>
+                <p id="descripcion"> TÍTULO: Técnico/a Universitario/a en Gestión Ambiental </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="hhttps://unahur.edu.ar/tecnicatura-universitaria-en-gestion-ambiental/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Ambiental-LIC.png" alt="">
+                <h5 id="nombre">Licenciatura en Gestión Ambiental</h5>
+                <p id="descripcion">TÍTULO: Licenciado/a en Gestión Ambiental
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                    <a href="https://unahur.edu.ar/licenciatura-en-gestion-ambiental/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+
+        <div class="contenedor">
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Alimentos-TEC.png" alt="">
+                <h5 id="nombre">Tecnicatura Universitaria en Tecnología de los Alimentos</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a Universitario/a en Tecnología de los Alimentos
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-tecnologia-de-los-alimentos/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Alimentos-LIC-.png">
+                <h5 id="nombre"> Licenciatura en Tecnología de los Alimentos</h5>
+                <p id="descripcion">
+                    TÍTULO: Licenciado/a en Tecnología de los Alimentos
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                    <a href="https://unahur.edu.ar/licenciatura-en-tecnologia-de-los-alimentos/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Viverismo-TEC.png" alt="">
+                <h5 id="nombre">Tecnicatura Universitaria en Viverismo</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a Universitario/a en Viverismo
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 cuatrimestres
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-viverismo/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Prod-agroecologica-TEC.png   " alt="">
+                <h5 id="nombre">Tecnicatura Universitaria en Producción Agroecológica Periurbana</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a Universitario/a en Producción Agroecológica Periurbana
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 cuatrimestres
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-produccion-agroecologica-periurbana/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+
+
+
+        <!-- Educación -->
+
+        <h2 id="educacion"> <a href="https://unahur.edu.ar/instituto-de-educacion/" target="_blank">Instituto de
+                Educación</a></h2>
+        <div class="contenedor">
+            <article class="contenedor__columna" id="instEducacion">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Educ-Fisica.png" alt="">
+                <h5 id="nombre">Profesorado Universitario en Educación Física</h5>
+                <p id="descripcion">
+                    TÍTULO: Profesor/a Universitario/a en Educación Física
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 4 años.
+                    <a href="https://unahur.edu.ar/profesorado-universitario-educacion-fisica/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna" id="instEducacion">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Educacion-LIC.png" alt="">
+                <h5 id="nombre">Licenciatura en Educación
+                    Ciclo de complementación curricular</h5>
+                <p id="descripcion">
+                    TÍTULO: Licenciado/a en Educación
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años.
+                    <a href="https://unahur.edu.ar/licenciatura-en-educacion/" target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna" id="instEducacion">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Letras.png" alt="">
+                <h5 id="nombre">Profesorado Universitario de Letras</h5>
+                <p id="descripcion">
+                    TÍTULO: Profesor/a Universitario/a de Letras
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 4 años.
+                    <a href="https://unahur.edu.ar/profesorado-universitario-de-letras/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+
+        <div class="contenedor">
+
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Matematica.png" alt="">
+                <h5 id="nombre"> Profesorado Universitario de Matemática</h5>
+                <p id="descripcion">
+                    TÍTULO: Profesor/a Universitario/a de Matemática
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 4 años.
+                    <a href="https://unahur.edu.ar/profesorado-universitario-de-matematica/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Ingles.png">
+                <h5 id="nombre"> Profesorado Universitario de Inglés</h5>
+                <p id="descripcion">
+                    TÍTULO: Profesor/a Universitario/a de Inglés
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 4 años.
+                    <a href="https://unahur.edu.ar/profesorado-universitario-de-ingles/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Biologia.png" alt="">
+                <h5 id="nombre"> Profesorado Universitario de Biología</h5>
+                <p id="descripcion">
+                </p>
+                <p id="descripcion">
+                    TÍTULO: Profesor/a Universitario/a de Biología
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 4 años.
+                    <a href="https://unahur.edu.ar/profesorado-universitario-de-biologia/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+
+
+
+        <!-- Salud Comunitaria-->
+
+        <h2 id="comunitaria"> <a href="https://unahur.edu.ar/instituto-de-salud-comunitaria/" target="_blank">Salud
+                Comunitaria</a></h2>
+        <div class="contenedor">
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Enfermeria-TEC.png" alt="">
+                <h5 id="nombre">Enfermería Universitaria</h5>
+                <p id="descripcion">
+                    TÍTULO: Enfermero/a Universitario/a
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 3 años
+                    <a href="https://unahur.edu.ar/enfermeria-universitaria/" target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Enfermeria-LIC.png">
+                <h5 id="nombre"> Licenciatura en Enfermería</h5>
+                <p id="descripcion">
+                    TÍTULO: Licenciado/a en Enfermería
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                    <a href="https://unahur.edu.ar/licenciatura-en-enfermeria/" target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Kinesiologia-LIC.png" alt="">
+
+                <h5 id="nombre"> Licenciatura en Kinesiología y Fisiatría</h5>
+                <p id="descripcion">
+                    TÍTULO: Licenciado/a en Kinesiología y Fisiatría
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                    <a href="https://unahur.edu.ar/licenciatura-en-kinesiologia-y-fisiatria/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Obstetricia-LIC.png" alt="">
+                <h5 id="nombre">Licenciatura en Obstetricia</h5>
+                <p id="descripcion">
+                    TÍTULO: Licenciado/a en Obstetricia
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                    <a href="https://unahur.edu.ar/licenciatura-en-obstetricia/" target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+
+
+
+        <!--Ingenieria y Tecnología-->
+
+        <h2 id="ingenieriaYTecnologia"><a href="https://unahur.edu.ar/instituto-de-tecnologia-e-ingenieria/"
+                target="_blank">Instituto de Ingenieria y Tecnologia</a></h2>
+        <div class="contenedor">
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2022/10/VideojuegosTEC.png" id="depTecnologia">
+                <h5 id="nombre">
+                    Tecnicatura Universitaria en Programación de Videojuegos (NUEVA)
+                </h5>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio <a
+                        href="https://unahur.edu.ar/tecnicatura-universitaria-en-programacion-de-videojuegos/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2022/10/Electromov-TEC.png" id="depTecnologia">
+                <h5 id="nombre">Tecnicatura Universitaria en Electromovilidad (NUEVA)</h5>
+                <p id="descripcion">
+
+                    DURACIÓN: 2 años y medio <a
+                        href="https://unahur.edu.ar/tecnicatura-universitaria-en-electromovilidad/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2022/09/Inteligencia-TEC.png" alt=""
+                    id="depTecnologia">
+
+                <h5 id="nombre">Tecnicatura Universitaria en Inteligencia Artificial (NUEVA)</h5>
+                <p id="descripcion">
+
+                    DURACIÓN: 2 años y medio <a
+                        href="https://unahur.edu.ar/tecnicatura-universitaria-en-inteligencia-artificial/"
+                        target="_blank"><strong>+</strong></a></p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2022/03/ICONOS_Redes-TEC.png" alt=""
+                    id="depTecnologia">
+                <h5 id="nombre">Tecnicatura Universitaria en Redes y Operaciones Informáticas.</h5>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio <a
+                        href="https://unahur.edu.ar/tecnicatura-universitaria-en-redes-y-operaciones-informaticas/"
+                        target="_blank"><strong>+</strong></a></p>
+            </article>
+        </div>
+
+        <div class="contenedor">
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2022/03/ICONO_Programacion-TEC.png" alt=""
+                    id="depTecnologia">
+                <h5 id="nombre"> Tecnicatura Universitaria en Programación</h5>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio <a href=" https://unahur.edu.ar/tecnicatura-universitaria-en-programacion/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Diseno-LIC.png">
+                <h5 id="nombre"> Licenciatura en Diseño Industrial</h5>
+                <p id="descripcion">
+                    TÍTULO: Licenciado/a en Diseño Industrial
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                </p>
+                <p id="descripcion">
+                    TÍTULO INTERMEDIO: Tecnicatura Universitaria en Diseño Industrial
+                    <a href=" https://unahur.edu.ar/licenciatura-en-diseno-industrial/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Diseno-TEC.png" alt="">
+                <h5 id="nombre"> Tecnicatura Universitaria en Diseño Industrial</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a Universitario/a en Diseño Industrial
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-diseno-industrial/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Metalurgia-ING.png" alt="">
+                <h5 id="nombre">Ingeniería Metaúrgica</h5>
+                <p id="descripcion">
+                    TÍTULO: Ingeniero/a Metalurgico/a
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                </p>
+                <p id="descripcion">
+                    TÍTULO INTERMEDIO: Tecnicatura Universitaria en Metalurgia
+                    <a href="https://unahur.edu.ar/ingenieria-metalurgica/" target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+
+        <div class="contenedor">
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Metalurgia-TEC.png" alt="">
+                <h5 id="nombre"> Tecnicatura Universitaria en Metalurgia</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a Universitario/a en Metalurgia
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-metalurgia/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Electrica-ING.png">
+                <h5 id="nombre">Ingeniería Eléctrica</h5>
+                <p id="descripcion">
+                    TÍTULO: Ingeniero/a Eléctrico/a
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                </p>
+                <p id="descripcion">
+                    TÍTULO INTERMEDIO: Técnico/a Universitario/a en Energía Eléctrica <a
+                        href="https://unahur.edu.ar/tecnicatura-universitaria-en-energia-electrica/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Electrica-TEC.png" alt="">
+
+                <h5 id="nombre">Tecnicatura Universitaria en Energía Eléctrica</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a Universitario/a en Energía Eléctrica
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-energia-electrica/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+
+        <div class="contenedor">
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Informatica-LIC.png" alt="">
+                <h5 id="nombre"> Licenciatura en Informática</h5>
+                <p id="descripcion">
+                    TÍTULO: Licenciado/a en Informática
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 5 años
+                </p>
+                <p id="descripcion">
+                    TÍTULO INTERMEDIO: Técnico/a Universitario/a en Informática
+                    <a href="https://unahur.edu.ar/licenciatura-informatica/" target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Mantenim-Hosp-TEC.png">
+                <h5 id="nombre"> Tecnicatura Universitaria en Mantenimiento Hospitalario</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a universitario en Mantenimiento Hospitalario
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-mantenimiento-hospitalario/"
+                        target="_blank"><strong>+</strong></a>
+                </p>
+
+            </article>
+
+            <article class="contenedor__columna" id="tresSecciones">
+                <img src="https://unahur.edu.ar/wp-content/uploads/2021/05/Mantenim-Indust-TEC.png" alt="">
+
+                <h5 id="nombre">Tecnicatura Universitaria en Mantenimiento Industrial</h5>
+                <p id="descripcion">
+                    TÍTULO: Técnico/a universitario en Mantenimiento Industrial
+                </p>
+                <p id="descripcion">
+                    DURACIÓN: 2 años y medio
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-mantenimiento-industrial/ "
+                        target="_blank"><strong>+</strong></a>
+                </p>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!--Inscripción-->
+
+    <section id="inscripcion">
+        <h3>Comenzá a inscribirte</h3>
+        <form>
+            <label for="nombre">Nombre</label> <input type="text" name="nombre" placeholder="Nombre">
+
+            <label for="apellido">Apellido</label><input type="text" name="apellido" placeholder="Apellido">
+            <h4>¿Qué Oferta Académica es la que mejor se adapta a tus necesidades?
+            </h4>
+            <input type="list" list="ofertas-academicas">
+            <datalist id="ofertas-academicas">
+                <datalist id="ofertas-academicas">
+                    <option value="Instituto de Biotecnología"></option>
+                    <option value="Instituto de Educación"></option>
+                    <option value="Instituto de Salud Comunitaria"></option>
+                    <option value="Instituto de Ingeniería y Tecnología"></option>
+                </datalist>
+            </datalist>
+            <p>
+                <label for="texto1">¿Por qué te queres inscribir?</label>
+            </p>
+            <textarea name="texto1" id="" cols="30" rows="5"></textarea>
+        </form>
+        <form>
+            <div class="form-group">
+                <input placeholder="example@mail.com" id="placeholder">
+            </div>
+            <button class="btn btn-default">Enviar</button>
+        </form>
+    </section>
+
+
+
+    <!--Como llegar-->
+
+    <section id="colectivos">
+        <p>Sedes y Direcciones:</p>
+        <ol>
+            <li>Av. Vergara 2222</li>
+            <li>Tte. Origone 100/200</li>
+            <li>Chuquisaca 3555</li>
+            <li>Ausebione y Tte. Origone</li>
+            <li>La Patria y Los Toldos</il>
+        </ol>
+        <p>
+            ¿Qué líneas de Colectivo se detienen cerca de Universidad Nacional De Hurlingham?
+        </p>
+        <ul>
+            <li>163</li>
+            <li>244</li>
+            <li>303</li>
+            <li>320</li>
+            <li>338</li>
+            <li>390</li>
+            <li>461</li>
+            <li>462</li>
+            <li>463</li>
+        </ul>
+    </section>
+
+    <!--Video-->
+
+    <div align="center">
+        <video width="420" height="315" controls>
+            <source src="video/UNAHUR.mp4" type="video/mp4">
+            <source src="video/red.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <a href="https://www.facebook.com/UNAHUR"> <img src="img/iconos/fb.png" alt="">
+            Facebook</a>
+
+        <a href="https://www.instagram.com/unahurlingham/"> <img src="img/iconos/instagram.png" alt="">
+            Instagram</a>
+
+        <a href="https://twitter.com/unahurlingham"> <img src="img/iconos/twitter.png" alt="">
+            Twitter</a>
+
+        <p id="tp">Si tienen algún problema/inconveniente <a
+                href="mailto:Contactar soporte.email@estudiantes.unahur.edu.ar">Comunicate</a></p>
+    </footer>
+</body>
+
+</html>
